@@ -210,7 +210,7 @@ namespace YAF.Controls
                 Target = "_top",
                 ToolTip = linkToolTip,
                 NavigateUrl = linkUrl,
-                Text = linkText
+                Text = (linkText + " ")     // Adding space will allow menu items to correctly split into 2 lines when window gets small
             };
 
             if (noFollow)

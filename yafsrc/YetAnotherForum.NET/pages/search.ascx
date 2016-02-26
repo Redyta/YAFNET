@@ -13,7 +13,7 @@
         jQuery().YafModalDialog.Close({ Dialog: '#<%=LoadingModal.ClientID%>' });
     }
     function ShowLoadingDialog() {
-        jQuery().YafModalDialog.Show({ Dialog: '#<%=LoadingModal.ClientID%>', ImagePath: '<%=YafForumInfo.GetURLToContent("images/")%>' }); 
+        jQuery().YafModalDialog.Show({ Dialog: '#<%=LoadingModal.ClientID%>', ImagePath: '<%=YafForumInfo.GetURLToContent("images/")%>' });
     }
     Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
 </script>
@@ -29,7 +29,7 @@
             <YAF:LocalizedLabel runat="server" LocalizedTag="KEYWORDS" />
         </td>
         <td class="post" valign="middle">
-            <asp:TextBox ID="txtSearchStringWhat" runat="server" Width="350px" />
+            <asp:TextBox ID="txtSearchStringWhat" runat="server" Width="97%" />
             <asp:DropDownList ID="listSearchWhat" runat="server" CssClass="standardSelectMenu" />
         </td>
     </tr>
@@ -38,7 +38,7 @@
             <YAF:LocalizedLabel runat="server" LocalizedTag="postedby" />
         </td>
         <td class="post">
-            <asp:TextBox ID="txtSearchStringFromWho" runat="server" Width="350px" />
+            <asp:TextBox ID="txtSearchStringFromWho" runat="server" Width="97%" />
             <asp:DropDownList ID="listSearchFromWho" runat="server" CssClass="standardSelectMenu" />
         </td>
     </tr>

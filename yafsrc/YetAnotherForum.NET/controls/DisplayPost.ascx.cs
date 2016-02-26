@@ -2,6 +2,7 @@
  * Copyright (C) 2003-2005 Bjørnar Henden
  * Copyright (C) 2006-2013 Jaben Cargman
  * Copyright (C) 2014-2016 Ingo Herbote
+ * Copyright (C) 2016 Robert Moskal
  * http://www.yetanotherforum.net/
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -515,14 +516,14 @@ namespace YAF.Controls
             }
             else if (this.Get<IUserIgnored>().IsIgnored(this.PostData.UserId))
             {
-                this.panMessage.Attributes["style"] = "display:none";
+                this.panMessage.Attributes["style"] = "display:none;";
                 this.PostFooter.TogglePost.Visible = true;
                 this.PostFooter.TogglePost.Attributes["onclick"] =
                     "toggleMessage('{0}'); return false;".FormatWith(this.panMessage.ClientID);
             }
             else if (!this.Get<IUserIgnored>().IsIgnored(this.PostData.UserId))
             {
-                this.panMessage.Attributes["style"] = "display:block";
+                this.panMessage.Attributes["style"] = "display:block;";
                 this.panMessage.Visible = true;
             }
 
@@ -598,7 +599,7 @@ namespace YAF.Controls
             }
 
             YafContext.Current.PageElements.RegisterJsBlockStartup("asynchCallFailedJs", "function CallFailed(res){ alert('Error Occurred'); }");
-            
+
             this.FormatThanksRow();
 
             this.ShowIPInfo();

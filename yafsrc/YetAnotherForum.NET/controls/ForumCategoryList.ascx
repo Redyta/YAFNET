@@ -7,7 +7,7 @@
 <%@ Register TagPrefix="YAF" TagName="ForumList" Src="ForumList.ascx" %>
 <asp:UpdatePanel ID="UpdatePanelCategory" runat="server" UpdateMode="Conditional">
     <ContentTemplate>
-        <table class="content" width="100%">
+        <table class="content" cellspacing="1" cellpadding="1" width="100%">
             <asp:Repeater ID="CategoryList" runat="server">
                 <HeaderTemplate>
                     <tr class="forumRowTitle">
@@ -17,14 +17,14 @@
                         <th id="Td1" class="header1 headerModerators" width="15%" runat="server" visible="<%# PageContext.BoardSettings.ShowModeratorList && PageContext.BoardSettings.ShowModeratorListAsColumn %>">
                             <YAF:LocalizedLabel ID="ModeratorsHeaderLabel" runat="server" LocalizedTag="MODERATORS" />
                         </th>
+                        <th class="header1 headerLastPost hidden-xs" width="25%">
+                            <YAF:LocalizedLabel ID="LastPostHeaderLabel" runat="server" LocalizedTag="LASTPOST" />
+                        </th>
                         <th class="header1 headerTopics" width="4%">
                             <YAF:LocalizedLabel ID="TopicsHeaderLabel" runat="server" LocalizedTag="TOPICS" />
                         </th>
                         <th class="header1 headerPosts" width="4%">
                             <YAF:LocalizedLabel ID="PostsHeaderLabel" runat="server" LocalizedTag="POSTS" />
-                        </th>
-                        <th class="header1 headerLastPost" width="25%">
-                            <YAF:LocalizedLabel ID="LastPostHeaderLabel" runat="server" LocalizedTag="LASTPOST" />
                         </th>
                     </tr>
                 </HeaderTemplate>

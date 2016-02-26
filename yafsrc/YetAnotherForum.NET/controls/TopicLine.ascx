@@ -105,20 +105,14 @@
       {
           string altMultipages = this.GetText("GOTO_POST_PAGER").FormatWith(string.Empty);
         %>
-        <span class="topicPager smallfont">- <img src="<%=this.Get<ITheme>().GetItem(
+        <span class="topicPager">- <img src="<%=this.Get<ITheme>().GetItem(
           "ICONS","MULTIPAGES_SMALL")%>" alt="<%=altMultipages%>" title="<%=altMultipages%>" />  
             <%=tPager%></span>
         <%
       }      
         %>
     </td>
-    <td class="topicReplies">
-        <%=this.FormatReplies() %>
-    </td>
-    <td class="topicViews">
-        <%=this.FormatViews()%>
-    </td>
-    <td class="topicLastPost smallfont">
+    <td class="topicLastPost hidden-xs">
         <%
             if (!this.TopicRow["LastMessageID"].IsNullOrEmptyDBField())
             {
@@ -183,4 +177,10 @@
             }    
         %>        
     </td>
+    <td class="topicReplies">
+        <%=this.FormatReplies() %>
+    </td>
+    <td class="topicViews">
+        <%=this.FormatViews()%>
+    </td>    
 </tr>

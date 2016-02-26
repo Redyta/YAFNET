@@ -11,7 +11,7 @@
 		<WizardSteps>
 			<asp:CreateUserWizardStep runat="server">
 				<ContentTemplate>
-					<table class="content" cellspacing="1" cellpadding="0" border="0" width="700">
+					<table class="content" cellspacing="1" cellpadding="0" border="0">
 						<tr>
 							<td align="center" class="header1" colspan="2">
 								<YAF:LocalizedLabel ID="LocalizedLabel2" runat="server" LocalizedTag="TITLE" />
@@ -166,6 +166,7 @@
 							<td align="center" colspan="2" class="postfooter">
 								<asp:Button ID="StepNextButton" runat="server" CssClass="pbutton" CommandName="MoveNext" Text="Create User"
 									ValidationGroup="CreateUserWizard1" />
+                                <br />
                                 <u><asp:LinkButton runat="server" ID="LoginButton" Visible="False" OnClick="LoginClick"></asp:LinkButton></u>
                                 <asp:Panel runat="server" Visible="False" ID="AuthPanel">
                                     <asp:LinkButton runat="server" ID="FacebookRegister" 
@@ -193,7 +194,7 @@
 			</asp:CreateUserWizardStep>
             <asp:TemplatedWizardStep runat="server" Title="Profile Information" ID="profile">
 				<ContentTemplate>
-					<table class="content" cellspacing="1" cellpadding="0" border="0" width="700">
+					<table class="content" cellspacing="1" cellpadding="0" border="0">
 						<tr>
 							<td align="center" class="header1" colspan="2">
 								<YAF:LocalizedLabel ID="LocalizedLabel11" runat="server" LocalizedTag="PROFILE" />
@@ -264,7 +265,7 @@
 			</asp:TemplatedWizardStep>
 			<asp:CompleteWizardStep runat="server">
 				<ContentTemplate>
-					<table class="content" cellspacing="1" cellpadding="0" border="0" width="700">
+					<table class="content" cellspacing="1" cellpadding="0" border="0">
 						<tr>
 							<td align="center" class="header1" colspan="2">
 								<YAF:LocalizedLabel ID="LocalizedLabel16" runat="server" LocalizedTag="PROFILE" />

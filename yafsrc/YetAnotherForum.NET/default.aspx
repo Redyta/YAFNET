@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <title></title>
 </head>
-<body id="YafBody" runat="server" style="margin: 0; padding: 5px">
+<body id="YafBody" runat="server" style="margin: 0 auto; padding: 5px; max-width: 1000px;">
     <asp:HyperLink runat="server" id="BannerLink" >
         <img src="~/forumlogo.jpg" runat="server" alt="logo" style="border: 0;" id="imgBanner" />
     </asp:HyperLink>

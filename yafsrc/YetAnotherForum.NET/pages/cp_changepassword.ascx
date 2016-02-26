@@ -5,8 +5,7 @@
 <div align="center">
     <asp:ChangePassword ID="ChangePassword1" runat="server">
         <ChangePasswordTemplate>
-            <table class="content" border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse"
-                width="700">
+            <table class="content" border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse">
                 <tr>
                     <td colspan="2" class="header1">
                         <YAF:LocalizedLabel ID="LocalizedLabel1" runat="server" LocalizedTag="TITLE" />
@@ -71,8 +70,7 @@
             </table>
         </ChangePasswordTemplate>
         <SuccessTemplate>
-            <table class="content" border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse"
-                width="700">
+            <table class="content" border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse">
                 <tr>
                     <td colspan="2" class="header1">
                         <YAF:LocalizedLabel ID="LocalizedLabel5" runat="server" LocalizedTag="TITLE" />

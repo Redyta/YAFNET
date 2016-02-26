@@ -339,7 +339,8 @@ namespace YAF
                         rSrcImg = new Rectangle(0, 0, newImgSize.Width, newImgSize.Height);
                     }
 
-                    var rDstImg = new Rectangle(3, 3, dst.Width - PixelPadding, dst.Height - PixelPadding - BottomSize);
+                    // RM - Adjust these so caption and view count are on the same line and box is smaller.
+                    var rDstImg = new Rectangle(3, 3, dst.Width - PixelPadding, dst.Height - BottomSize + 6);
                     var rDstTxt1 = new Rectangle(3, rDstImg.Height + 3, newImgSize.Width, BottomSize - 13);
                     var rDstTxt2 = new Rectangle(3, rDstImg.Height + 16, newImgSize.Width, BottomSize - 13);
 

@@ -19,7 +19,7 @@
         });
     };
 
-    jQuery('.menuMyList li a').not('.menuMyList li .Unread a').text('');
+    jQuery('.menuMyList li a').not('.menuMyList li .Unread a');
     jQuery(".loggedInUser").insertBefore('.menuMyList');
 
     jQuery(function() {

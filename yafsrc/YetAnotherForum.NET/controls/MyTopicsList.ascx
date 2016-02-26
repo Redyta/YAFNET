@@ -24,14 +24,14 @@
         <td class="header1">
             <YAF:LocalizedLabel ID="LocalizedLabel6" runat="server" LocalizedTag="topics" />
         </td>
+        <td class="header1 hidden-xs" width="20%">
+            <YAF:LocalizedLabel ID="LocalizedLabel10" runat="server" LocalizedTag="lastpost" />
+        </td>
         <td class="header1" style="text-align:center" width="7%">
             <YAF:LocalizedLabel ID="LocalizedLabel8" runat="server" LocalizedTag="replies" />
         </td>
         <td class="header1" style="text-align:center" width="7%">
             <YAF:LocalizedLabel ID="LocalizedLabel9" runat="server" LocalizedTag="views" />
-        </td>
-        <td class="header1" width="20%">
-            <YAF:LocalizedLabel ID="LocalizedLabel10" runat="server" LocalizedTag="lastpost" />
         </td>
     </tr>
     <asp:Repeater ID="TopicList" runat="server">

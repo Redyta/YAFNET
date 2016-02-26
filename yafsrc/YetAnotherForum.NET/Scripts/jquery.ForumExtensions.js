@@ -14910,11 +14910,15 @@ function yaf_mouseover() {
 }
 
 function yaf_left(obj) {
-    return jQuery(obj).position().left;
+    // RM - Changed this because after converting to DIVs, menu was always showing on top of the page
+    //return jQuery(obj).position().left;
+    return jQuery(obj).offsetParent().position().left + jQuery(obj).position().left;
 }
 
 function yaf_top(obj) {
-    return jQuery(obj).position().top + jQuery(obj).outerHeight() + 1;
+    // RM - Changed this because after converting to DIVs, menu was always showing on top of the page
+    //return jQuery(obj).position().top + jQuery(obj).outerHeight() + 1;
+    return jQuery(obj).offsetParent().position().top + jQuery(obj).position().top + jQuery(obj).outerHeight() + 1;
 }
 
 function yaf_popit(menuName) {

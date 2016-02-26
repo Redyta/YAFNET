@@ -26,7 +26,7 @@
                                 &nbsp;<YAF:LocalizedLabel ID="ByLabel" runat="server" LocalizedTag="BY" LocalizedPage="TOPICS" />
                                 &nbsp;<YAF:UserLink ID="LastUserLink"  runat="server" />&nbsp;(<asp:HyperLink ID="ForumLink" runat="server" />)
                             </td>
-                            <td class="post" style="width: 30em; text-align: right;">                            
+                            <td class="post hidden-xs" style="text-align: right;">                            
                                 <YAF:DisplayDateTime ID="LastPostDate" runat="server" Format="BothTopic" />
                                 <asp:HyperLink ID="ImageMessageLink" runat="server">
                                     <YAF:ThemeImage ID="LastPostedImage" runat="server" Style="border: 0" />

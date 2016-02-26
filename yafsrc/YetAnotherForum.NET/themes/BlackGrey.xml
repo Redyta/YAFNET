@@ -3,7 +3,11 @@
   <page name="THEME">   
     <Resource tag="CREDIT"></Resource>
 	<Resource tag="HEADER">
-	&lt;script type="text/javascript" src="~/js/ColorGrey.js"&gt;&lt;/script&gt;
+	  &lt;script type="text/javascript" src="~/js/ColorGrey.js"&gt;&lt;/script&gt;
+
+    &lt;link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"&gt;
+    &lt;script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"&gt;&lt;/script&gt;
 	</Resource>
 	<Resource tag="DIGESTHEAD">
       &lt;style type="text/css"&gt;

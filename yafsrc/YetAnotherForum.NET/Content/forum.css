@@ -1306,6 +1306,8 @@ pre[class*='language-'] > code[data-language]::before {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+    .select2-container .select2-selection--single .select2-selection__clear {
+      position: relative; }
   .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
     padding-right: 8px;
     padding-left: 20px; }
@@ -1328,7 +1330,8 @@ pre[class*='language-'] > code[data-language]::before {
       box-sizing: border-box;
       border: none;
       font-size: 100%;
-      margin-top: 5px; }
+      margin-top: 5px;
+      padding: 0; }
       .select2-container .select2-search--inline .select2-search__field::-webkit-search-cancel-button {
         -webkit-appearance: none; }
 
@@ -1534,7 +1537,8 @@ pre[class*='language-'] > code[data-language]::before {
   background: transparent;
   border: none;
   outline: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  -webkit-appearance: textfield; }
 
 .select2-container--default .select2-results > .select2-results__options {
   max-height: 200px;
@@ -2024,6 +2028,13 @@ pre[class*='language-'] > code[data-language]::before {
   float: left;
   margin-top: 10px;
 }
+.yafnet #DivIconLegend li {
+  list-style: none;
+  float: left;
+}
+.yafnet #DivIconLegend li img {
+  vertical-align: middle;
+}
 .yafnet .leftItem {
   float: left;
 }
@@ -2374,7 +2385,7 @@ pre[class*='language-'] > code[data-language]::before {
   display: none;
 }
 .yafnet .selectMenuWithIcons {
-  width: 500px;
+  width: 200px;
 }
 .yafnet option.customicon {
   background-repeat: no-repeat !important;
@@ -2413,7 +2424,7 @@ pre[class*='language-'] > code[data-language]::before {
 .yafnet .UserPopMenuLink,
 .yafnet .GoToLink {
   cursor: pointer;
-  margin: 0 0 0 5px;
+  margin: 0;
   padding: 2px 15px 2px 4px;
 }
 .yafnet .pagination a,
@@ -2596,7 +2607,7 @@ pre[class*='language-'] > code[data-language]::before {
 }
 /* Drop Downs */
 .standardSelectMenu {
-  width: 350px;
+  width: 200px;
 }
 .ui-selectmenu-button {
   vertical-align: middle;
@@ -2714,3 +2725,4 @@ a.OpenUploadDialog {
   vertical-align: bottom;
   margin-right: .3em;
 }
+/*# sourceMappingURL=forum.css.map */

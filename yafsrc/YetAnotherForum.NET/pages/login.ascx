@@ -10,7 +10,7 @@
                     <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
                         <tr>
                             <td>
-                                <table border="0" cellpadding="0" class="content" width="400">
+                                <table border="0" cellpadding="0" class="content">
                                     <tr>
                                         <td align="center" colspan="2" class="header1">
                                             <YAF:LocalizedLabel ID="LocalizedLabel1" runat="server" LocalizedTag="title" />

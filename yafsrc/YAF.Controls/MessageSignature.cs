@@ -2,6 +2,7 @@
  * Copyright (C) 2003-2005 Bjørnar Henden
  * Copyright (C) 2006-2013 Jaben Cargman
  * Copyright (C) 2014-2016 Ingo Herbote
+ * Copyright (C) 2016 Robert Moskal
  * http://www.yetanotherforum.net/
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -105,20 +106,23 @@ namespace YAF.Controls
 
             if (!this.Get<ITheme>().ThemeFile.Contains("Mobile"))
             {
-                writer.Write("</tr><tr class=\"{0}\">", this.GetPostClass());
-
+                //writer.Write("</tr><tr class=\"{0}\">", this.GetPostClass());
 
                 // Bad Hack
+                /*
                 if (this.ClientID.Contains("LastPosts"))
                 {
                     writer.Write("<td></td>");
                 }
+                */
 
+                /*
                 writer.WriteBeginTag("td");
                 writer.WriteAttribute("id", this.ClientID);
                 writer.WriteAttribute("class", "SignatureColumn");
                 writer.WriteAttribute("colspan", "2");
                 writer.Write(HtmlTextWriter.TagRightChar);
+                */
             }
 
             writer.WriteBeginTag("div");
@@ -141,14 +145,12 @@ namespace YAF.Controls
             }
 
             base.Render(writer);
-
-
             writer.WriteEndTag("div");
 
             if (!this.Get<ITheme>().ThemeFile.Contains("Mobile"))
             {
                 writer.WriteEndTag("td");
-            } 
+            }
 
 
             writer.EndRender();

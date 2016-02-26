@@ -5,39 +5,42 @@
 <%@ Import Namespace="YAF.Types.Extensions" %>
 <YAF:PageLinks runat="server" ID="PageLinks" />
 <table cellspacing="0" cellpadding="0" class="content" width="100%">
-    <tr>
-        <td class="header1" colspan="4">
+    <tr class="post">
+        <td class="header1" colspan="2">
             <YAF:LocalizedLabel ID="SearchMembersLocalizedLabel" runat="server" LocalizedTag="Search_Members" />
         </td>
     </tr>
-    <tr class="header2">
-        <td>
+    <tr class="post">
+        <td align="right">
             <YAF:LocalizedLabel ID="SearchRolesLocalizedLabel" runat="server" LocalizedTag="Search_Role" />
         </td>
-        <td>
-            <YAF:LocalizedLabel ID="SearchRankLocalizedLabel" runat="server" LocalizedTag="Search_Rank" />
-        </td>
-        <td>
-            <YAF:LocalizedLabel ID="SearchMemberLocalizedLabel" runat="server" LocalizedTag="Search_Member" />
+        <td align="left">
+            <asp:DropDownList ID="Group" runat="server" Width="200px" CssClass="standardSelectMenu">
+            </asp:DropDownList>
         </td>
     </tr>
     <tr class="post">
-        <td>
-            <asp:DropDownList ID="Group" runat="server" Width="95%" CssClass="standardSelectMenu">
+        <td align="right">
+            <YAF:LocalizedLabel ID="SearchRankLocalizedLabel" runat="server" LocalizedTag="Search_Rank" />
+        </td>
+        <td align="left">
+            <asp:DropDownList ID="Ranks" runat="server" Width="200px" CssClass="standardSelectMenu">
             </asp:DropDownList>
         </td>
-        <td>
-            <asp:DropDownList ID="Ranks" runat="server" Width="95%" CssClass="standardSelectMenu">
-            </asp:DropDownList>
+    </tr>
+    <tr class="post">
+        <td align="right">
+            <YAF:LocalizedLabel ID="SearchMemberLocalizedLabel" runat="server" LocalizedTag="Search_Member" />
         </td>
-        <td>
+        <td align="left">
             <asp:TextBox ID="UserSearchName" runat="server" Width="95%"></asp:TextBox>
         </td>
     </tr>
     <tr class="post">
-        <td colspan="3">
+        <td  align="right">
             <YAF:LocalizedLabel ID="NumPostsLabel" runat="server" LocalizedTag="NUMPOSTS" />
-            &nbsp;
+        </td>
+        <td align="left">
             <asp:DropDownList ID="NumPostDDL" runat="server" Width="200px" CssClass="standardSelectMenu">
             </asp:DropDownList>
             &nbsp;
@@ -83,7 +86,7 @@
             <img runat="server" id="SortPosts" alt="Sort Posts" style="vertical-align: middle" Visible="False" />
             <asp:LinkButton runat="server" ID="Posts"  Enabled="false"  OnClick="Posts_Click" />
         </td>
-        <td class="header2">
+        <td class="header2 hidden-xs">
             <img runat="server" id="SortLastVisit" alt="Sort Last Visit" style="vertical-align: middle" />
             <asp:LinkButton runat="server" ID="LastVisitLB" OnClick="LastVisitLB_Click" />
         </td>
@@ -108,7 +111,7 @@
                 <td class="post" style="text-align:center">
                     <%# "{0:N0}".FormatWith(((System.Data.DataRowView)Container.DataItem)["NumPosts"]) %>
                 </td>
-                <td class="post">
+                <td class="post hidden-xs">
                     <%# this.Get<IDateTime>().FormatDateLong((DateTime)((System.Data.DataRowView)Container.DataItem)["LastVisit"]) %>
                 </td>
             </tr>

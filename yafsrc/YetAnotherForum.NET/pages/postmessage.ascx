@@ -28,7 +28,7 @@
 			<YAF:LocalizedLabel ID="TopicSubjectLabel" runat="server" LocalizedTag="subject" />
 		</td>
 		<td class="post" width="80%">
-			<asp:TextBox ID="TopicSubjectTextBox" runat="server" CssClass="edit" MaxLength="100" Width="400" autocomplete="off" />
+			<asp:TextBox ID="TopicSubjectTextBox" runat="server" CssClass="edit" MaxLength="100" Width="98%" autocomplete="off" />
 		</td>
 	</tr>
     <tr id="DescriptionRow" visible="false" runat="server">
@@ -72,7 +72,7 @@
 			<YAF:LocalizedLabel runat="server" LocalizedTag="priority" />
 		</td>
 		<td class="post" width="80%">
-			<asp:DropDownList ID="Priority" runat="server" CssClass="standardSelectMenu" Width="400" />
+			<asp:DropDownList ID="Priority" runat="server" CssClass="standardSelectMenu" Width="98%" />
 		</td>
 	</tr>
     <tr id="StyleRow" runat="server">
@@ -144,13 +144,13 @@
 
 <script type="text/javascript">
 
-	var prm = Sys.WebForms.PageRequestManager.getInstance();
+    var prm = Sys.WebForms.PageRequestManager.getInstance();
 
-	prm.add_beginRequest(beginRequest);
+    prm.add_beginRequest(beginRequest);
 
-	function beginRequest() {
-		prm._scrollPosition = null;
-	}
+    function beginRequest() {
+        prm._scrollPosition = null;
+    }
 
 </script>
 
